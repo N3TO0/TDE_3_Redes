@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Protocolos de Rede</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <header class="banner">
+    <h1>Protocolos de Rede<br>e Aplicações P2P</h1>
+  </header>
+
+  <main class="content">
+
+    <section class="protocolo ip" id="s1">
+      <h2>IP (Internet Protocol)</h2>
+      <p>O IP é o protocolo fundamental da internet que permite o endereçamento e roteamento de pacotes de dados entre diferentes redes. Atua na camada da rede ( camada 3 ) do modelo OSI, atribuindo endereços únicos e definido como os pacotes são encaminhados até seu detino.</p>
+      
+      <h3 id="h">Características Principais:</h3>
+
+      <div class="text1">
+
+        <div class="text2">
+          <h3>Sem conexão</h3>
+          <h3>Baseado em melhor esforço</h3>
+          <h3>Versões IPv4 e IPv6</h3>
+        </div>
+
+        <div class="text3">
+          <h3>Cada pacote é tratado <br>independentemente </h3>
+          <h3>Não garante entrega ou ordem <br>dos pacotes</h3>
+          <h3>Opera com IPv4 (32 bits) <br> ou IPv6 (128 bits)</h3>
+          
+        </div>
+      </div>
+      <div class="campo_img1">
+          <img class="icon" src="img/img1_png.png" alt="icon">
+      </div>
+
+      <h2>TCP (Transmission Control Protocol)</h2>
+      <p>O TCP é um protocolo da camada de transporte ( camada 4 ) que estabelece conexões entre aplicativos. garante que todos os pacotes sejam entregues sem erros e na sequência correta, sendo ideal para dados que não podem ser pedidos</p>
+
+      <h3 id="h">Características Principais:</h3>
+
+      <div class="sec_top">
+        <div class="top2">
+          <div class="top">
+            <h3>Orientado à conexão</h3>
+            <p>Estabelece, mantém e encerra conexões</p>
+          </div>
+
+          <div class="top">
+            <h3>Recuperação de erros</h3>
+            <p>Retransmite pacotes perdidos</p>
+          </div>
+        </div>
+
+        <div class="camp2_img">
+          <img class="icon" src="img/img2_png.png" alt="icon">
+        </div>
+
+
+        <div class="top2">
+            <div class="top">
+              <h3>Controle de fluxo</h3>
+              <p>Evita sobrecarga do receptor</p>
+            </div>
+            
+            <div class="top">
+              <h3>Controle de congestionamento</h3>
+              <p>Ajusta a taca de transferencia conforme condições da rede</p>
+            </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="protocolo http">
+      <h2>HTTP (Hypertext Transfer Protocol)</h2>
+      <p>HTTP é um protocolo da camada de aplicação usado para transmissão de hipermídia, sendo base para comunicação de dados na web muitas interfaces de sistemas internos. Opera no modelo requisição-resposta entre cliente e servidores.</p>
+      
+      <div class="sec_top">
+        <div class="top2">
+          <div class="top">
+            <h3>Requisição Cliente</h3>
+            <p>Cliente envia solicitação ao servidor</p>
+          </div>
+
+          <div class="top">
+            <h3>Renderização</h3>
+            <p>Cliente exibe o conteúdo recebido</p>
+          </div>
+        </div>
+
+        <div class="camp2_img">
+          <img class="icon" src="img/img3_png.png" alt="icon">
+        </div>
+
+
+        <div class="top2">
+            <div class="top">
+              <h3>Processamento</h3>
+              <p>Servidor processa a requisição</p>
+            </div>
+            
+            <div class="top">
+              <h3>Resposta Servidor</h3>
+              <p>Servidor envia dados solicitados</p>
+            </div>
+          
+          
+        </div>
+      </div>
+      <h3 id="h" >Características Principais:</h3>
+      <ul>
+        <li>Stateless</li>
+        <li>Métodos diversos</li>
+        <li>Extensível</li>
+        <li>Versões: HTTP/1.1, HTTP/2, HTTP/3</li>
+      </ul>
+    </section>
+
+    <section class="protocolo dns">
+      <h2>DNS (Domain Name System)</h2>
+      <p>DNS é um sistema hierárquico e distribuido que traduz nomes de domínio amigáveis em endereços IP. Funciona como a "lista telefonica" da internet, permitindo que o usuário acessem recursos usando nomes em vez de números.</p>
+
+      <div class="camp2_img"  id="img4">
+          <img class="icon" src="img/img4_png.jpeg" alt="icon">
+        </div>
+
+      <h3 id="h">Características Principais:</h3>
+      <ul>
+        <li>Estrutura hierárquica</li>
+        <li>Mecanismo de cache</li>
+        <li>Sistema distribuído</li>
+        <li>Diversos tipos de registros</li>
+      </ul>
+    </section>
+
+    <section class="protocolo_smtpimap">
+      <h2>SMTP e IMAP</h2>
+      <div class="smtp">
+        <h3 id="h">SMTP (Simple Mail Transfer Protocol)</h3>
+        <p>SMTP é o protocolo padrão para transmissão de e-mails entre servidores de correio eletrõnico. Define como as mensagens são enviadas, roteadas e entregues em redes TCP/IP.</p>
+
+        <ul>
+          <li>Confiável no envio de mensagens</li>
+          <li>Opera na porta 25 (padrão)</li>
+          <li>Baseado em filas de mensagens</li>
+          <li>Inclui mecanismo para notificação de entrega/falha</li>
+          <li>Extensões modernas para autenticação e segurança</li>
+        </ul>
+
+      </div>
+      <div class="imap">
+        <h3 id="h" >IMAP (Internet Message Access Protocol)</h3>
+        <p>IMAP permite que clientes de e-mail acessem mensagens armazenadas em um servidor remoto. Diferente do POP3, mantém as mensagens no servidor, permitindo acesso sincronizado de múltiplos dispositivos.</p>
+
+        <ul>
+          <li>Acesso às mensagens permanentemente</li>
+          <li>Gerenciamento de pastas no servidor</li>
+          <li>Suporte a múltiplos dispositivos simultâneos</li>
+          <li>Download parcial de mensagens (cabeçalho, corpo)</li>
+          <li>Estados de leitura sincronizados entre dispositivos</li>
+          <li>Opera na porta 143 (com TLS)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="protocolo p2p">
+      <h2>Aplicações P2P (Peer-to-Peer)</h2>
+      <h3 id="h" >Características:</h3>
+
+      <div class="sec_top">
+        <div class="top2">
+          <div class="top" id="extra">
+            <h3>Descentralização</h3>
+            <p>Não existe um ponto único de <br> controle ou falha</p>
+          </div>
+
+          <div class="top" id="extra">
+            <h3>Conexão direta</h3>
+            <p>Comunicação direta entre pares  <br>sem intermiediários</p>
+          </div>
+        </div>
+
+        <div class="camp2_img">
+          <img class="icon" src="img/img5_png.png" alt="icon">
+        </div>
+
+
+        <div class="top2" id="extra">
+            <div class="top">
+              <h3>Escalabilidade</h3>
+              <p>Quanto mais participantes, mais <br> recursos disponíveis</p>
+            </div>
+            
+            <div class="top" id="extra">
+              <h3>Resiliência</h3>
+              <p>Continua funcionando mesmo sem  <br>alguns nós ficarem indisponíveis</p>
+            </div>
+            
+            <div class="top" id="extra">
+              <h3>Resposta Servidor</h3>
+              <p>Recursos e processamento divídidos <br> entre participantes</p>
+            </div>
+         </div> 
+      </div>    
+
+      <p>Redes P2P são sistemas distribuidos onde os participantes (nós ou "peers") compartilham resursos diretamente entre si, sem depender de um servidor central. Cada participante pode funcionar simultaneamente como cliente e servidor, contribuindo com resursos e consumindo serviços de rede</p>
+
+      <h3 id="h" >Tipos de Arquiteturas P2P:</h3>
+      <div class="div_10">
+        <div class="sub_10">
+        <h3><strong>Pura:</strong></h3>
+        <p>Completamente descentralizada, sem servidores (ex: BitTorrent)</p>
+        </div>
+
+        <div class="sub_10">
+        <h3><strong>Híbrida:</strong></h3>
+        <p>Combina elementos centralizados e P2P (ex: Skype) </p>
+        </div>
+
+        <div class="sub_10">
+        <h3><strong>Não estruturada:</strong></h3>
+        <p>Conexôes mais orgânicas entre participantes</p>
+        </div>
+
+        <div class="sub_10">
+        <h3><strong>Estruturada:</strong></h3>
+        <p>Organizada com tabelas de hash distribuídas (DHT) </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
